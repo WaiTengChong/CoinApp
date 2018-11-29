@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="coinApp" customModuleProvider="target">
+            <connections>
+                <outlet property="BitCoin" destination="fq6-Lj-xHu" id="Op4-xF-9fb"/>
+                <outlet property="Bitcoin" destination="fq6-Lj-xHu" id="Swg-Oh-wgR"/>
+                <outlet property="quit" destination="Fbj-5s-e1F" id="5q5-Bl-5yV"/>
+                <outlet property="quitClicked" destination="Fbj-5s-e1F" id="DmN-Xj-F3Z"/>
+                <outlet property="statusMenu" destination="Nca-oE-mA8" id="lr5-b0-slF"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="Nca-oE-mA8">
+            <items>
+                <menuItem title="BTC Price" id="fq6-Lj-xHu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="Voe-Tx-rLC" id="9pb-TO-O06"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="XRP Price" id="okz-8u-OvK">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="XRPclicked:" target="Voe-Tx-rLC" id="3Zv-wz-d12"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="Fbj-5s-e1F">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="click:" target="Voe-Tx-rLC" id="nfQ-b1-E4n"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-162" y="9"/>
+        </menu>
+    </objects>
+</document>
