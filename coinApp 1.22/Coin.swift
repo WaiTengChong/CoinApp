@@ -98,7 +98,7 @@ class CoinAPI{
         let task = session.dataTask(with: url!) { data, response, err in
             // first check for a hard error
             if let error = err {
-                self.mystring = "Turn on your fking wifi stupid"
+                self.mystring = "Turn on your wifi"
                 NSLog("CoinMarketCap api error: \(error)")
             }
             
