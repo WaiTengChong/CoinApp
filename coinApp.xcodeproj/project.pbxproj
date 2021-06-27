@@ -20,7 +20,7 @@
 		CE579A382137D1E200FDF4A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CE579A3A2137D1E200FDF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE579A3B2137D1E200FDF4A7 /* coinApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coinApp.entitlements; sourceTree = "<group>"; };
-		CE579A432137D67700FDF4A7 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		CE579A432137D67700FDF4A7 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coin.swift; path = ../Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,6 @@
 		CE579A272137D1E100FDF4A7 = {
 			isa = PBXGroup;
 			children = (
-				CE579A432137D67700FDF4A7 /* Coin.swift */,
 				CE579A322137D1E100FDF4A7 /* coinApp */,
 				CE579A312137D1E100FDF4A7 /* Products */,
 			);
@@ -54,6 +53,7 @@
 		CE579A322137D1E100FDF4A7 /* coinApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE579A432137D67700FDF4A7 /* Coin.swift */,
 				CE579A332137D1E100FDF4A7 /* AppDelegate.swift */,
 				CE579A352137D1E200FDF4A7 /* Assets.xcassets */,
 				CE579A372137D1E200FDF4A7 /* MainMenu.xib */,

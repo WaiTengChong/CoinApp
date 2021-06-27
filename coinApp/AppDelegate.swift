@@ -15,26 +15,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
      let coinAPI = CoinAPI()
     
-    
-    @IBAction func updateClicked(_ sender: Any) {
- let coin2 = CoinAPI()
-        statusItem.title = coin2.Display()
+    @IBAction func allClicked(_ sender: Any) {
+        statusItem.title = coinAPI.DisplayAll()
     }
     
-    @IBAction func XRPclicked(_ sender: Any) {
-        let coin3 = CoinAPI()
-        statusItem.title = coin3.DisplayXRP()
-        
-    }
     @IBAction func click(_ sender: Any) {
        NSApplication.shared.terminate(self)
     }
-    
-    
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
  
-                statusItem.title = coinAPI.Display()
+                statusItem.title = coinAPI.DisplayAll()
                 
                 statusItem.menu = statusMenu
 
